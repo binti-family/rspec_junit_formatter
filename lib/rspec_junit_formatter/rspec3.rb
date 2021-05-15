@@ -95,6 +95,10 @@ private
     notification.example.execution_result.exception
   end
 
+  def location_for(notification)
+    notification.example.location
+  end
+
   # rspec makes it really difficult to swap in configuration temporarily due to
   # the way it cascades defaults, command line arguments, and user
   # configuration. This method makes sure configuration gets swapped in

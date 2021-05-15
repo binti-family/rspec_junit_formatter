@@ -76,6 +76,10 @@ private
     example.example_group.parent_groups + [example.example_group]
   end
 
+  def location_for(notification)
+    example.location
+  end
+
   def stdout_for(example)
     example.metadata[:stdout]
   end
