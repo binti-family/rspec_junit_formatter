@@ -69,7 +69,7 @@ private
     output << %{<testcase}
     output << %{ classname="#{escape(classname_for(example))}"}
     output << %{ name="#{escape(description_for(example))}"}
-    output << %{ file="#{escape(example_group_file_path_for(example))}"}
+    output << %{ file="#{escape(location_for(example))}"}
     output << %{ time="#{escape("%.6f" % duration_for(example))}"}
     output << %{ location="#{escape(location_for(example))}"}
     output << %{>}
