@@ -96,7 +96,7 @@ private
   end
 
   def location_for(notification)
-    notification.example.location
+    notification.example.location_rerun_argument
   end
 
   # rspec makes it really difficult to swap in configuration temporarily due to
