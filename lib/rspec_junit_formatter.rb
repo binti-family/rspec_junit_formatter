@@ -94,7 +94,7 @@ private
 
   # Inversion of character range from https://www.w3.org/TR/xml/#charsets
   ILLEGAL_REGEXP = Regexp.new(
-    +"[^" <<
+    "[^".dup <<
     "\u{9}" << # => \t
     "\u{a}" << # => \n
     "\u{d}" << # => \r
@@ -126,7 +126,7 @@ private
   # Discouraged characters from https://www.w3.org/TR/xml/#charsets
   # Plus special characters with well-known entity replacements
   DISCOURAGED_REGEXP = Regexp.new(
-    +"[" <<
+    "[".dup <<
     "\u{22}" << # => "
     "\u{26}" << # => &
     "\u{27}" << # => '
